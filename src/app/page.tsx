@@ -16,21 +16,21 @@ export default function Home() {
       <main className="flex flex-col gap-8">
         <div className="flex flex-col gap-4 text-black/80 max-w-[60ch]">
           <h1 className="text-5xl font-medium">
-            Stay on top of your most important work.
+            The command center for product and engineering teams
           </h1>
           <p>
-            It’s easy to lose track of what you need to do and understand what
-            is going on. You get a notification, someone tags you, and stuff is
-            just happening. You’ll get back to it. Eventually.
+            As an engineering or product leader it is hard to stay on top of
+            what's happening. You get a notification, someone tags you, and
+            stuff is just happening. You’ll get back to it. Eventually, maybe.
           </p>
           <p>
-            We want to make it easier for you to stay on top of the important
+            We want to make it easier for you to catchup with the important
             things and to understand what is happening within your business.
             Essentially, we’re building the “For you” with information from all
             the tools you’re already using.
           </p>
           <p>
-            Things you maybe want to do will be suggested to you, like answering
+            The actions you want to do will be suggested to you, like answering
             that email you forgot about. Or scheduling the meeting you said you
             would.
           </p>
