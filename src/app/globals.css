@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+  }
+}
+
+body {
+  min-height: 100vh;
+  color: rgb(var(--foreground-rgb));
+  background: radial-gradient(circle at bottom, rgba(255, 0, 0, 0.03), rgba(255, 255, 255, 0) 70%), radial-gradient(circle at bottom, rgba(255, 168, 0, 0.03), rgba(255, 255, 255, 0) 70%);
+  image-rendering: optimizeQuality; /* Improve SVG rendering/aliasing */
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
