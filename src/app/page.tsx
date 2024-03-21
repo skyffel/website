@@ -19,15 +19,18 @@ export default function Home() {
             The command center for product and engineering teams
           </h1>
           <p>
-            As an engineering or product leader it is hard to stay on top of
-            what's happening. You get a notification, someone tags you, and
-            stuff is just happening. You’ll get back to it. Eventually, maybe.
+            As an engineering or product leader it is exhausting to always stay
+            up to date with what's going on. You get a notification, someone
+            tags you, and stuff is just happening. You’ll get back to it.
+            Eventually, maybe.
           </p>
           <p>
             We want to make it easier for you to catchup with the important
             things and to understand what is happening within your business.
-            Essentially, we’re building the “For you” with information from all
-            the tools you’re already using.
+            skyffel is the command center enabling engineering and product teams
+            to stay on top of the most important things by gluing your apps and
+            files together. Essentially, we’re building the “For you” with
+            information from all the tools you’re already using.
           </p>
           <p>
             The actions you want to do will be suggested to you, like answering
