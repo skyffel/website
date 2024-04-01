@@ -15,8 +15,8 @@ export function Logo(props: React.SVGProps<SVGSVGElement>) {
         fill="url(#paint1_linear_476_1581)"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M220.152 55.3532V55.8359H220.503L220.152 55.3532H220.524L220.381 55.5047L220.732 55.8359V55.3532H220.524L244.342 30.1131C244.842 29.5832 245.189 29.2149 245.648 29.0167C246.108 28.8186 246.614 28.8188 247.343 28.8192L261.539 28.8192L235.609 56.2485L235.004 56.2512L257.434 85.8077C259.484 88.5089 260.509 89.8595 259.977 90.9316C259.444 92.0037 257.748 92.0038 254.356 92.0038H249.046C248.102 92.0038 247.629 92.0038 247.222 91.8011C246.816 91.5985 246.531 91.2218 245.962 90.4681L239.23 81.5531L247.007 92.2332C246.497 91.9791 246.147 91.5148 245.643 90.8471L225.693 64.4274L220.152 69.9562V88.177C220.152 89.0573 220.152 89.7668 220.077 90.3249C219.999 90.9043 219.832 91.3921 219.444 91.7795C219.057 92.167 218.569 92.3336 217.989 92.4115C217.43 92.4865 216.72 92.4865 215.84 92.4865H211.264C210.384 92.4865 209.674 92.4865 209.115 92.4115C208.536 92.3336 208.047 92.167 207.66 91.7795C207.272 91.3921 207.105 90.9043 207.027 90.3249C206.952 89.7668 206.952 89.0573 206.952 88.177V12.2281C206.952 11.3479 206.952 10.6383 207.027 10.0803C207.105 9.50088 207.272 9.01305 207.66 8.62561C208.047 8.23818 208.536 8.07153 209.115 7.99364C209.674 7.91861 210.384 7.91862 211.264 7.91864H215.84C216.721 7.91862 217.43 7.91861 217.989 7.99364C218.569 8.07153 219.057 8.23818 219.444 8.62561C219.832 9.01305 219.999 9.50088 220.077 10.0803C220.152 10.6383 220.152 11.3479 220.152 12.2282V55.3532ZM259.962 29.7847H260.419V29.302L260.067 28.9704L259.754 29.302H260.419L259.962 29.7847Z"
         fill="url(#paint2_linear_476_1581)"
       />
@@ -33,8 +33,8 @@ export function Logo(props: React.SVGProps<SVGSVGElement>) {
         fill="url(#paint5_linear_476_1581)"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M394.888 73.9472C393.614 71.4051 392.898 68.3637 392.757 64.8098H437.408V60C437.408 54.272 436.639 49.3793 435.084 45.3357C433.536 41.2796 431.412 37.963 428.706 35.4015C426.013 32.8528 422.968 30.9792 419.574 29.7857C416.194 28.5973 412.704 28.0031 409.104 28.0031C403.188 28.0031 397.996 29.397 393.544 32.2003L393.543 32.2011C389.127 35.0002 385.687 38.8929 383.222 43.8653L383.221 43.8673C380.784 48.8428 379.572 54.5782 379.572 61.0614C379.572 67.6249 380.783 73.3751 383.222 78.2981L383.224 78.3011C385.691 83.1961 389.19 87.0078 393.717 89.7237L393.72 89.7254C398.281 92.4169 403.702 93.7522 409.963 93.7522C414.593 93.7522 418.732 93.0509 422.371 91.6376L422.373 91.6369C426.033 90.1985 429.081 88.1875 431.509 85.5987C432.965 84.0464 434.157 82.3403 435.085 80.4811L435.105 80.44C435.49 79.6687 435.808 79.0309 435.967 78.4772C436.138 77.8811 436.141 77.3337 435.857 76.7677C435.566 76.188 435.084 75.8623 434.459 75.6393C433.867 75.4279 433.085 75.2873 432.122 75.1142L427.799 74.3369C427.126 74.2158 426.586 74.1188 426.149 74.0827C425.702 74.0457 425.305 74.0662 424.935 74.2234C424.551 74.3867 424.232 74.7116 423.91 75.121C423.586 75.5328 423.209 76.0984 422.727 76.8195L422.712 76.8423C422.224 77.5739 421.668 78.2389 421.044 78.8377C419.705 80.121 418.115 81.0924 416.268 81.7511C414.417 82.384 412.358 82.7038 410.086 82.7038C406.583 82.7038 403.547 81.9577 400.958 80.4822C398.372 78.981 396.348 76.8082 394.888 73.9472ZM424.449 54.7003H392.795C392.991 52.2622 393.634 49.9807 394.723 47.8517C396.076 45.2318 397.982 43.1178 400.449 41.5035L400.45 41.5028C402.926 39.8735 405.832 39.0515 409.185 39.0515C412.273 39.0515 414.938 39.7545 417.197 41.1434L417.199 41.1447C419.495 42.5406 421.276 44.4477 422.545 46.8749L422.546 46.877C423.749 49.1509 424.386 51.755 424.449 54.7003Z"
         fill="url(#paint6_linear_476_1581)"
       />
@@ -51,7 +51,7 @@ export function Logo(props: React.SVGProps<SVGSVGElement>) {
           y2="112.5"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#333333" />
+          <stop stopColor="#333333" />
           <stop offset="1" />
         </linearGradient>
         <linearGradient
@@ -62,8 +62,8 @@ export function Logo(props: React.SVGProps<SVGSVGElement>) {
           y2="116"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#333333" />
-          <stop offset="1" stop-color="#222222" />
+          <stop stopColor="#333333" />
+          <stop offset="1" stopColor="#222222" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_476_1581"
@@ -73,8 +73,8 @@ export function Logo(props: React.SVGProps<SVGSVGElement>) {
           y2="116"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#333333" />
-          <stop offset="1" stop-color="#222222" />
+          <stop stopColor="#333333" />
+          <stop offset="1" stopColor="#222222" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_476_1581"
@@ -84,8 +84,8 @@ export function Logo(props: React.SVGProps<SVGSVGElement>) {
           y2="116"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#333333" />
-          <stop offset="1" stop-color="#222222" />
+          <stop stopColor="#333333" />
+          <stop offset="1" stopColor="#222222" />
         </linearGradient>
         <linearGradient
           id="paint4_linear_476_1581"
@@ -95,8 +95,8 @@ export function Logo(props: React.SVGProps<SVGSVGElement>) {
           y2="116"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#333333" />
-          <stop offset="1" stop-color="#222222" />
+          <stop stopColor="#333333" />
+          <stop offset="1" stopColor="#222222" />
         </linearGradient>
         <linearGradient
           id="paint5_linear_476_1581"
@@ -106,8 +106,8 @@ export function Logo(props: React.SVGProps<SVGSVGElement>) {
           y2="116"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#333333" />
-          <stop offset="1" stop-color="#222222" />
+          <stop stopColor="#333333" />
+          <stop offset="1" stopColor="#222222" />
         </linearGradient>
         <linearGradient
           id="paint6_linear_476_1581"
@@ -117,8 +117,8 @@ export function Logo(props: React.SVGProps<SVGSVGElement>) {
           y2="116"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#333333" />
-          <stop offset="1" stop-color="#222222" />
+          <stop stopColor="#333333" />
+          <stop offset="1" stopColor="#222222" />
         </linearGradient>
         <linearGradient
           id="paint7_linear_476_1581"
@@ -128,8 +128,8 @@ export function Logo(props: React.SVGProps<SVGSVGElement>) {
           y2="116"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#333333" />
-          <stop offset="1" stop-color="#222222" />
+          <stop stopColor="#333333" />
+          <stop offset="1" stopColor="#222222" />
         </linearGradient>
       </defs>
     </svg>

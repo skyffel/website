@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "./utils";
 import { Analytics } from "@vercel/analytics/react";
+import { PostHogPageView } from "./posthog-page-view";
+import { Providers } from "./providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,9 +21,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Analytics />
-      <body className={cn(inter.className, "max-w-5xl w-full mx-auto p-8")}>
-        {children}
-      </body>
+      <Providers>
+        <body className={cn(inter.className, "max-w-5xl w-full mx-auto p-8")}>
+          <PostHogPageView />
+          {children}
+        </body>
+      </Providers>
     </html>
   );
 }

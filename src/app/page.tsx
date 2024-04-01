@@ -6,8 +6,9 @@ import ui3 from "../assets/ui-3.webp";
 import ui4 from "../assets/ui-4.webp";
 import { WaitlistSignup } from "./waitlist-signup";
 import { Logo } from "./logo";
+import { Link } from "./link";
 
-export default function Home() {
+export default async function Home() {
   return (
     <>
       <header className="flex justify-center mb-12">
@@ -45,13 +46,13 @@ export default function Home() {
           </label>
           <label className="flex flex-col gap-2 items-start">
             <span className="text-sm">Magic button</span>
-            <a
+            <Link
               href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2PP6mzNK_7Mz1VNxNjokAprNyoPRwtBjNR_Hrz3N1BH0A5-zH3cMQ36sL1S3AtXENwkitg5ses"
               target="_blank"
               className="bg-black/80 text-white px-4 py-2 rounded-xl leading-none shadow-lg hover:bg-black/60 transition"
             >
               See it live
-            </a>
+            </Link>
           </label>
         </div>
         <section className="flex flex-col md:flex-row gap-8">
@@ -117,7 +118,7 @@ export default function Home() {
         <Logo className="h-8" />
         <ul className="flex gap-4">
           <li>
-            <a
+            <Link
               href="https://twitter.com/skyffelhq"
               target="_blank"
               className="text-black/80 hover:text-black/100 transition"
@@ -129,7 +130,7 @@ export default function Home() {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g clip-path="url(#clip0_649_3790)">
+                <g clipPath="url(#clip0_649_3790)">
                   <path
                     d="M14.2856 10.2619L23.2216 0.0983887H21.1048L13.3424 8.9214L7.1472 0.0983887H0L9.3704 13.4416L0 24.0983H2.1168L10.3088 14.7789L16.8528 24.0983H24M2.8808 1.66028H6.1328L21.1032 22.6131H17.8504"
                     fill="currentColor"
@@ -146,10 +147,10 @@ export default function Home() {
                   </clipPath>
                 </defs>
               </svg>
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               href="https://www.linkedin.com/company/skyffel"
               target="_blank"
               className="text-black/80 hover:text-black/100 transition"
@@ -161,10 +162,10 @@ export default function Home() {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g clip-path="url(#clip0_649_3792)">
+                <g clipPath="url(#clip0_649_3792)">
                   <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     d="M1.7715 0.0991211H22.2225C23.2027 0.0991211 24 0.873871 24 1.82787V22.3659C24 23.3221 23.2027 24.0984 22.224 24.0984H1.7715C0.795 24.0984 0 23.3221 0 22.3659V1.82787C0 0.873871 0.795 0.0991211 1.7715 0.0991211ZM7.12443 9.09612H3.55818V20.5486H7.12443V9.09612ZM7.40118 5.45862C7.40118 4.32087 6.47643 3.39612 5.33868 3.39612C5.06764 3.39582 4.79919 3.44895 4.5487 3.55247C4.29821 3.65599 4.07057 3.80787 3.87881 3.99942C3.68705 4.19097 3.53493 4.41843 3.43114 4.66882C3.32735 4.9192 3.27393 5.18758 3.27393 5.45862C3.27531 6.00593 3.4934 6.53041 3.88047 6.91735C4.26755 7.30429 4.79212 7.52218 5.33943 7.52337C6.47643 7.52337 7.40118 6.59637 7.40118 5.45862ZM9.35643 9.09612H9.35118L9.35643 9.09387V9.09612ZM9.35643 9.09612V20.5464H12.9129V14.8809C12.9129 13.3884 13.1979 11.9409 15.0504 11.9409C16.8759 11.9409 16.8999 13.6509 16.8999 14.9784V20.5494H20.4572V14.2674C20.4572 11.1841 19.7919 8.81187 16.1874 8.81187C14.4489 8.81187 13.2879 9.76137 12.8124 10.6614H12.7652V9.09612H9.35643Z"
                     fill="currentColor"
                   />
@@ -180,10 +181,10 @@ export default function Home() {
                   </clipPath>
                 </defs>
               </svg>
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               href="https://github.com/skyffel"
               target="_blank"
               className="text-black/80 hover:text-black/100 transition"
@@ -195,7 +196,7 @@ export default function Home() {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g clip-path="url(#clip0_649_3796)">
+                <g clipPath="url(#clip0_649_3796)">
                   <path
                     d="M11.9536 0.0983887C5.35266 0.0983887 0 5.45011 0 12.052C0 17.3335 3.42506 21.8142 8.17462 23.3948C8.772 23.5054 8.99137 23.1355 8.99137 22.8197C8.99137 22.5347 8.98022 21.593 8.97516 20.5942C5.64956 21.3173 4.94784 19.1838 4.94784 19.1838C4.40409 17.8021 3.62062 17.4348 3.62062 17.4348C2.53612 16.6929 3.70237 16.7081 3.70237 16.7081C4.90275 16.7924 5.53481 17.9399 5.53481 17.9399C6.60094 19.7674 8.33119 19.239 9.01331 18.9337C9.12056 18.161 9.43041 17.6338 9.77222 17.3353C7.11722 17.0329 4.32609 16.0079 4.32609 11.4277C4.32609 10.1227 4.79306 9.05629 5.55778 8.2192C5.43366 7.91808 5.02453 6.70233 5.67356 5.05579C5.67356 5.05579 6.67734 4.73451 8.96166 6.28111C9.91509 6.01617 10.9377 5.88342 11.9536 5.87892C12.9695 5.88342 13.9928 6.01617 14.9482 6.28111C17.2297 4.73451 18.2321 5.05579 18.2321 5.05579C18.8827 6.70233 18.4734 7.91808 18.3493 8.2192C19.1157 9.05629 19.5795 10.1226 19.5795 11.4277C19.5795 16.0188 16.7831 17.0298 14.1214 17.3257C14.5501 17.6967 14.9321 18.4242 14.9321 19.5393C14.9321 21.1387 14.9182 22.426 14.9182 22.8197C14.9182 23.1378 15.1334 23.5106 15.7394 23.3932C20.4863 21.8108 23.9071 17.3317 23.9071 12.052C23.9071 5.45011 18.5552 0.0983887 11.9536 0.0983887Z"
                     fill="currentColor"
@@ -216,7 +217,7 @@ export default function Home() {
                   </clipPath>
                 </defs>
               </svg>
-            </a>
+            </Link>
           </li>
         </ul>
       </footer>

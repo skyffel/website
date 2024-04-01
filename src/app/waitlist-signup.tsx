@@ -1,11 +1,14 @@
 "use client";
 import { AnimatePresence, motion } from "framer-motion";
+import { usePostHog } from "posthog-js/react";
 import { FormEvent, useState } from "react";
 
 export function WaitlistSignup() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [isSuccess, setIsSuccess] = useState(false); // Added state to track success
+
+  const posthog = usePostHog();
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -15,9 +18,9 @@ export function WaitlistSignup() {
     const formData = new FormData(event.currentTarget);
     const email = formData.get("email");
 
-    try {
-      document.URL;
+    posthog.capture("Waitlist Signup Clicked", { email });
 
+    try {
       const response = await fetch(
         "https://api.getwaitlist.com/api/v1/signup",
         {
@@ -38,10 +41,10 @@ export function WaitlistSignup() {
       }
 
       const data = await response.json();
-      console.log("Signup successful", data);
+      posthog.capture("Waitlist Signup Succeeded", data);
       setIsSuccess(true); // Set success state on successful signup
     } catch (error) {
-      console.error("Signup failed", error);
+      posthog.capture("Waitlist Signup Failed", { error });
       setError("Something went wrong, please try again."); // Set error state on failure
     } finally {
       setIsLoading(false);
