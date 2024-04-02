@@ -5,6 +5,7 @@ import { cn } from "./utils";
 import { Analytics } from "@vercel/analytics/react";
 import { PostHogPageView } from "./posthog-page-view";
 import { Providers } from "./providers";
+import { Suspense } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,7 +24,9 @@ export default function RootLayout({
       <Analytics />
       <Providers>
         <body className={cn(inter.className, "max-w-5xl w-full mx-auto p-8")}>
-          <PostHogPageView />
+          <Suspense>
+            <PostHogPageView />
+          </Suspense>
           {children}
         </body>
       </Providers>
