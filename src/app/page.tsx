@@ -41,7 +41,7 @@ export default async function Home() {
         </div>
         <div className="flex flex-col gap-4 items-start">
           <label className="flex flex-col gap-2 items-start">
-            <span className="text-sm">Get on the waitlist</span>
+            <span className="text-sm">Join the beta!</span>
             <WaitlistSignup />
           </label>
           <label className="flex flex-col gap-2 items-start">

@@ -158,7 +158,9 @@ export function WaitlistSignup() {
               <path d="m9 12 2 2 4-4" />
             </svg>
             <span>
-              {"You're in! If you have any questions or feedback, "}
+              {
+                "You're waitlisted for the beta! If you have any questions or feedback, "
+              }
               <a
                 href="https://x.com/skyffelhq"
                 className="underline inline"
