@@ -16,11 +16,11 @@ export default async function Home() {
       </header>
       <main className="flex flex-col gap-8 items-center">
         <div className="flex flex-col items-center gap-4 text-black/80 max-w-[80ch]">
-          <h1 className="text-5xl font-medium text-center leading-tight">
+          <h1 className="text-4xl md:text-5xl font-medium text-center leading-tight text-balance">
             Juggling 3+ work tools? <br />
             {"You're"} definitely not caught up
           </h1>
-          <p className="text-center text-xl max-w-[50ch]">
+          <p className="text-center text-xl max-w-[50ch] text-balance">
             Avoid information silos and instantly find what has been happening
             across your org. Your work, organized. As it should be.
           </p>

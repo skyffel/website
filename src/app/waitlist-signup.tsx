@@ -54,7 +54,7 @@ export function WaitlistSignup() {
   return (
     <>
       <form
-        className="md: bg-white md:border md:rounded-2xl flex flex-col md:flex-row gap-2 items-start md:items-center  md:shadow-md md:pr-1"
+        className="md:border md:rounded-2xl flex flex-col md:flex-row gap-2 items-start md:items-center  md:shadow-md md:pr-1"
         onSubmit={handleSubmit}
       >
         <input
@@ -68,8 +68,8 @@ export function WaitlistSignup() {
 
         <button
           type="submit"
-          className="bg-black/10 text-black/80 px-4 py-2 rounded-xl leading-none hover:bg-black/20 transition flex gap-2 items-center
-            max-sm:shadow-sm
+          className="items-center w-full md:w-auto text-center bg-black/10 text-black/80 px-4 py-2 rounded-xl leading-none hover:bg-black/20 transition flex gap-2
+            max-sm:shadow-sm justify-center
           "
           disabled={isLoading}
         >

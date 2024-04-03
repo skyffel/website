@@ -23,7 +23,9 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <Analytics />
       <Providers>
-        <body className={cn(inter.className, "max-w-5xl w-full mx-auto p-8")}>
+        <body
+          className={cn(inter.className, "max-w-5xl w-full mx-auto p-6 md:p-8")}
+        >
           <Suspense>
             <PostHogPageView />
           </Suspense>
