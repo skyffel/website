@@ -54,7 +54,7 @@ export function WaitlistSignup() {
   return (
     <>
       <form
-        className="md:border md:rounded-2xl flex flex-col md:flex-row gap-2 items-start md:items-center  md:shadow-md md:pr-1"
+        className="md:bg-white md:border md:rounded-2xl flex flex-col md:flex-row gap-2 items-start md:items-center  md:shadow-md md:pr-1"
         onSubmit={handleSubmit}
       >
         <input
