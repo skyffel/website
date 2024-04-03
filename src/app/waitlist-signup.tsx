@@ -63,7 +63,7 @@ export function WaitlistSignup() {
           name="email"
           required
           placeholder="i-want-this-now@skyffel.com"
-          className="px-4 py-2 rounded-tl-xl rounded-bl-xl min-w-[30ch] max-sm:w-full max-sm: bg-white max-sm:border max-sm:rounded-2xl max-sm:flex-row max-sm:shadow-md max-sm:pr-1"
+          className="px-4 text-black py-2 rounded-tl-xl rounded-bl-xl min-w-[30ch] max-sm:w-full max-sm: bg-white max-sm:border max-sm:rounded-2xl max-sm:flex-row max-sm:shadow-md max-sm:pr-1"
         />
 
         <button

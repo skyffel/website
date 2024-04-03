@@ -16,13 +16,14 @@ export default async function Home() {
       </header>
       <main className="flex flex-col gap-8 items-center">
         <div className="flex flex-col items-center gap-4 text-black/80 max-w-[80ch]">
-          <h1 className="text-4xl md:text-5xl font-medium text-center leading-tight text-balance">
-            Juggling 3+ work tools? <br />
-            {"You're"} definitely not caught up
+          <h1 className="md:leading-tight leading-tight text-4xl md:text-4xl font-semibold text-center text-balance">
+            <span className="block">Using 3+ work apps?</span>
+            <span>{"You're definitely not caught up"}</span>
           </h1>
-          <p className="text-center text-xl max-w-[50ch] text-balance">
-            Avoid information silos and instantly find what has been happening
-            across your org. Your work, organized. As it should be.
+          <p className="text-center text-xl max-w-[50ch] text-black/60 font-medium text-balance">
+            {
+              "Avoid information silos and instantly understand what is going on across your org. Your works apps, centralized."
+            }
           </p>
         </div>
         <div className="flex flex-col md:flex-row gap-4 items-center my-4">
@@ -33,7 +34,9 @@ export default async function Home() {
           >
             Schedule demo
           </Link>
-          <a href="#waitlist-input">Waitlist signup {"->"}</a>
+          <a href="#waitlist-input" className="text-black/80">
+            Waitlist signup {"->"}
+          </a>
         </div>
         <section className="flex flex-col md:flex-row gap-8">
           <div className="flex flex-1 flex-col gap-8">
@@ -45,12 +48,14 @@ export default async function Home() {
                   style={{ width: "100%", height: "auto" }}
                   className="rounded-xl border border-black/10 shadow-lg"
                 />
-                <figcaption className="text-black/80 text-sm">
+                <figcaption className="space-y-1 text-black/80 text-sm">
                   <p className="font-medium">
                     Grouped and summarized notifications
                   </p>
-                  Instead of getting a notification for every single event in
-                  every single app, get only what you need to know in one place
+                  <p>
+                    Get what you need to know in a single place instead of
+                    scattering them across different apps
+                  </p>
                 </figcaption>
               </figure>
             </article>
@@ -62,10 +67,12 @@ export default async function Home() {
                   style={{ width: "100%", height: "auto" }}
                   className="rounded-xl border border-black/10 shadow-lg"
                 />
-                <figcaption className="text-black/80 text-sm">
+                <figcaption className="space-y-1 text-black/80 text-sm">
                   <p className="font-medium">Search across all your apps</p>
-                  Find documents and notifications you need instantly instead of
-                  browsing every app where you <i>might</i> find it
+                  <p>
+                    Find documents and notifications you need instantly instead
+                    of browsing every app where you <i>might</i> find it
+                  </p>
                 </figcaption>
               </figure>
             </article>
@@ -79,16 +86,16 @@ export default async function Home() {
                   style={{ width: "100%", height: "auto" }}
                   className="rounded-xl border border-black/10 shadow-lg"
                 />
-                <figcaption className="text-black/80 text-sm">
-                  <p className="font-medium">
-                    Organize your information into spaces
+                <figcaption className="space-y-1 text-black/80 text-sm">
+                  <p className="font-medium">Organized in spaces</p>
+                  <p>
+                    A space for every team, project,{" "}
+                    <input
+                      className="bg-transparent w-24 border rounded-lg px-1 placeholder:text-black/40"
+                      placeholder="(you name it)"
+                    />{" "}
+                    to keep your documents and notifications organized
                   </p>
-                  A space for every team, project,{" "}
-                  <input
-                    className="bg-transparent w-24 border rounded-lg px-1 placeholder:text-black/40"
-                    placeholder="(you name it)"
-                  />{" "}
-                  to keep your documents and notifications organized
                 </figcaption>
               </figure>
             </article>
@@ -100,7 +107,7 @@ export default async function Home() {
                   style={{ width: "100%", height: "auto" }}
                   className="rounded-xl border border-black/10 shadow-lg"
                 />
-                <figcaption className="text-black/80 text-sm">
+                <figcaption className="space-y-1 text-black/80 text-sm">
                   <p className="font-medium">
                     Shareable reports for stakeholders
                   </p>
@@ -112,7 +119,9 @@ export default async function Home() {
           </div>
         </section>
         <label className="flex flex-col gap-2 items-center mt-4">
-          <span className="text-sm">Get on the beta waitlist</span>
+          <span className="text-sm text-black/80">
+            Get on the beta waitlist
+          </span>
           <WaitlistSignup />
         </label>
       </main>
