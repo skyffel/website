@@ -15,7 +15,7 @@
 body {
   min-height: 100vh;
   color: rgb(var(--foreground-rgb));
-  background: radial-gradient(circle at bottom, rgba(255, 0, 0, 0.03), rgba(255, 255, 255, 0) 70%), radial-gradient(circle at bottom, rgba(255, 168, 0, 0.03), rgba(255, 255, 255, 0) 70%);
+  background: radial-gradient(circle at bottom, rgba(255, 0, 0, 0.05), rgba(255, 255, 255, 0) 70%), radial-gradient(circle at bottom, rgba(255, 168, 0, 0.1), rgba(255, 255, 255, 0) 70%);
   image-rendering: optimizeQuality; /* Improve SVG rendering/aliasing */
 }
 
@@ -23,4 +23,9 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+html {
+  --scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
 }

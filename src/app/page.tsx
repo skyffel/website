@@ -4,9 +4,9 @@ import ui1 from "../assets/ui-1.webp";
 import ui2 from "../assets/ui-2.webp";
 import ui3 from "../assets/ui-3.webp";
 import ui4 from "../assets/ui-4.webp";
-import { WaitlistSignup } from "./waitlist-signup";
-import { Logo } from "./logo";
 import { Link } from "./link";
+import { Logo } from "./logo";
+import { WaitlistSignup } from "./waitlist-signup";
 
 export default async function Home() {
   return (
@@ -14,46 +14,26 @@ export default async function Home() {
       <header className="flex justify-center mb-12">
         <Logo className="w-32" />
       </header>
-      <main className="flex flex-col gap-8">
-        <div className="flex flex-col gap-4 text-black/80 max-w-[60ch]">
-          <h1 className="text-5xl font-medium">
-            The command center for product and engineering teams
+      <main className="flex flex-col gap-8 items-center">
+        <div className="flex flex-col items-center gap-4 text-black/80 max-w-[80ch]">
+          <h1 className="text-5xl font-medium text-center leading-tight">
+            Juggling 3+ work tools? <br />
+            {"You're"} definitely not caught up
           </h1>
-          <p>
-            {`As an engineering or product leader it is exhausting to always stay
-            up to date with what's going on. You get a notification, someone
-            tags you, and stuff is just happening. You’ll get back to it.
-            Eventually, maybe.`}
-          </p>
-          <p>
-            {`We want to make it easier for you to catchup with the important
-            things and to understand what is happening within your business.
-            skyffel is the command center enabling engineering and product teams
-            to stay on top of the most important things by gluing your apps and
-            files together. Essentially, we’re building the "For you" with
-            information from all the tools you’re already using.`}
-          </p>
-          <p>
-            {`The actions you want to do will be suggested to you, like answering
-            that email you forgot about. Or scheduling the meeting you said you
-            would.`}
+          <p className="text-center text-xl max-w-[50ch]">
+            Avoid information silos and instantly find what has been happening
+            across your org. Your work, organized. As it should be.
           </p>
         </div>
-        <div className="flex flex-col gap-4 items-start">
-          <label className="flex flex-col gap-2 items-start">
-            <span className="text-sm">Join the beta!</span>
-            <WaitlistSignup />
-          </label>
-          <label className="flex flex-col gap-2 items-start">
-            <span className="text-sm">Magic button</span>
-            <Link
-              href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2PP6mzNK_7Mz1VNxNjokAprNyoPRwtBjNR_Hrz3N1BH0A5-zH3cMQ36sL1S3AtXENwkitg5ses"
-              target="_blank"
-              className="bg-black/80 text-white px-4 py-2 rounded-xl leading-none shadow-lg hover:bg-black/60 transition"
-            >
-              See it live
-            </Link>
-          </label>
+        <div className="flex flex-col md:flex-row gap-4 items-center my-4">
+          <Link
+            href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2PP6mzNK_7Mz1VNxNjokAprNyoPRwtBjNR_Hrz3N1BH0A5-zH3cMQ36sL1S3AtXENwkitg5ses"
+            target="_blank"
+            className="bg-black/80 text-white px-4 py-2 rounded-xl leading-none shadow-lg hover:bg-black/60 transition"
+          >
+            Schedule demo
+          </Link>
+          <a href="#waitlist-input">Waitlist signup {"->"}</a>
         </div>
         <section className="flex flex-col md:flex-row gap-8">
           <div className="flex flex-1 flex-col gap-8">
@@ -66,7 +46,11 @@ export default async function Home() {
                   className="rounded-xl border border-black/10 shadow-lg"
                 />
                 <figcaption className="text-black/80 text-sm">
-                  All things relevant to you
+                  <p className="font-medium">
+                    Grouped and summarized notifications
+                  </p>
+                  Instead of getting a notification for every single event in
+                  every single app, get only what you need to know in one place
                 </figcaption>
               </figure>
             </article>
@@ -79,7 +63,9 @@ export default async function Home() {
                   className="rounded-xl border border-black/10 shadow-lg"
                 />
                 <figcaption className="text-black/80 text-sm">
-                  Search for your files, reports and what you need
+                  <p className="font-medium">Search across all your apps</p>
+                  Find documents and notifications you need instantly instead of
+                  browsing every app where you <i>might</i> find it
                 </figcaption>
               </figure>
             </article>
@@ -94,7 +80,15 @@ export default async function Home() {
                   className="rounded-xl border border-black/10 shadow-lg"
                 />
                 <figcaption className="text-black/80 text-sm">
-                  Take command where actions will be most impactful
+                  <p className="font-medium">
+                    Organize your information into spaces
+                  </p>
+                  A space for every team, project,{" "}
+                  <input
+                    className="bg-transparent w-24 border rounded-lg px-1 placeholder:text-black/40"
+                    placeholder="(you name it)"
+                  />{" "}
+                  to keep your documents and notifications organized
                 </figcaption>
               </figure>
             </article>
@@ -107,12 +101,20 @@ export default async function Home() {
                   className="rounded-xl border border-black/10 shadow-lg"
                 />
                 <figcaption className="text-black/80 text-sm">
-                  Your work, organized
+                  <p className="font-medium">
+                    Shareable reports for stakeholders
+                  </p>
+                  Generate reports so you can keep them in the loop without
+                  writing them yourself
                 </figcaption>
               </figure>
             </article>
           </div>
         </section>
+        <label className="flex flex-col gap-2 items-center mt-4">
+          <span className="text-sm">Get on the beta waitlist</span>
+          <WaitlistSignup />
+        </label>
       </main>
       <footer className="mt-16 w-full border-t border-t-black/10 pt-8 flex justify-between items-end">
         <Logo className="h-8" />

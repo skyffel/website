@@ -1,11 +1,11 @@
+import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Suspense } from "react";
 import "./globals.css";
-import { cn } from "./utils";
-import { Analytics } from "@vercel/analytics/react";
 import { PostHogPageView } from "./posthog-page-view";
 import { Providers } from "./providers";
-import { Suspense } from "react";
+import { cn } from "./utils";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <Analytics />
       <Providers>
         <body className={cn(inter.className, "max-w-5xl w-full mx-auto p-8")}>
