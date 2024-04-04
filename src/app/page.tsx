@@ -88,12 +88,8 @@ export default async function Home() {
                 <figcaption className="space-y-1 text-black/80 text-sm">
                   <p className="font-medium">Organized in spaces</p>
                   <p>
-                    A space for every team and project
-                    {/* <input
-                      className="bg-transparent w-24 border rounded-lg px-1 placeholder:text-black/40"
-                      placeholder="(you name it)"
-                    />{" "} */}
-                    to keep your documents and activity organized
+                    A space for every team and project to keep your documents
+                    and activity organized
                   </p>
                 </figcaption>
               </figure>
