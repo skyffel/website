@@ -11,7 +11,17 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "skyffel",
-  description: "the command center for product and engineering teams",
+  description: "the command center for engineering teams",
+  openGraph: {
+    images: [
+      {
+        url: "https://skyffel.com/opengraph-image.png",
+        width: 4800,
+        height: 2520,
+        alt: "skyffel",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({

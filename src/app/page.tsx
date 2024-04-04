@@ -11,8 +11,16 @@ import { WaitlistSignup } from "./waitlist-signup";
 
 export const metadata: Metadata = {
   title: "skyffel",
+  description: "the command center for engineering teams",
   openGraph: {
-    title: "skyffel",
+    images: [
+      {
+        url: "https://skyffel.com/opengraph-image.png",
+        width: 4800,
+        height: 2520,
+        alt: "skyffel",
+      },
+    ],
   },
 };
 
