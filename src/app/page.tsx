@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+import { Metadata } from "next";
 import ui1 from "../assets/ui-1.webp";
 import ui2 from "../assets/ui-2.webp";
 import ui3 from "../assets/ui-3.webp";
@@ -8,7 +9,12 @@ import { Link } from "./link";
 import { Logo } from "./logo";
 import { WaitlistSignup } from "./waitlist-signup";
 
-const INTEGRATIONS = [];
+export const metadata: Metadata = {
+  title: "skyffel",
+  openGraph: {
+    title: "skyffel",
+  },
+};
 
 export default async function Home() {
   return (
