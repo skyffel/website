@@ -610,8 +610,8 @@ export default async function Home() {
               y2="139.477"
               gradientUnits="userSpaceOnUse"
             >
-              <stop offset="0.18" stop-color="#0052CC" />
-              <stop offset="1" stop-color="#2684FF" />
+              <stop offset="0.18" stopColor="#0052CC" />
+              <stop offset="1" stopColor="#2684FF" />
             </linearGradient>
             <linearGradient
               id="paint1_linear_0_1"
@@ -621,8 +621,8 @@ export default async function Home() {
               y2="158.379"
               gradientUnits="userSpaceOnUse"
             >
-              <stop offset="0.18" stop-color="#0052CC" />
-              <stop offset="1" stop-color="#2684FF" />
+              <stop offset="0.18" stopColor="#0052CC" />
+              <stop offset="1" stopColor="#2684FF" />
             </linearGradient>
             <linearGradient
               id="paint2_linear_0_1"
@@ -632,8 +632,8 @@ export default async function Home() {
               y2="483"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#FF9900" stop-opacity="0.25" />
-              <stop offset="1" stop-color="#FF9900" stop-opacity="0.5" />
+              <stop stopColor="#FF9900" stop-opacity="0.25" />
+              <stop offset="1" stopColor="#FF9900" stop-opacity="0.5" />
             </linearGradient>
             <linearGradient
               id="paint3_linear_0_1"
@@ -643,7 +643,7 @@ export default async function Home() {
               y2="578.536"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#333333" />
+              <stop stopColor="#333333" />
               <stop offset="1" />
             </linearGradient>
             <clipPath id="clip0_0_1">
