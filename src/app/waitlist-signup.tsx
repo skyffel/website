@@ -112,7 +112,7 @@ export function WaitlistSignup() {
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            className="flex gap-2 items-start md:items-center text-sm"
+            className="flex gap-2 items-start md:items-center text-sm text-black/80"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -138,7 +138,7 @@ export function WaitlistSignup() {
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            className="flex gap-2 items-start md:items-center text-sm"
+            className="flex gap-2 items-start md:items-center text-sm text-black/80"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
