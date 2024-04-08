@@ -43,7 +43,7 @@ export default async function Home() {
         </div>
         <div className="flex flex-col md:flex-row gap-4 items-center my-4">
           <Link
-            href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2PP6mzNK_7Mz1VNxNjokAprNyoPRwtBjNR_Hrz3N1BH0A5-zH3cMQ36sL1S3AtXENwkitg5ses"
+            href="https://cal.com/philip-andersson/skyffel-demo"
             target="_blank"
             className="bg-black/80 text-white px-4 py-2 rounded-xl leading-none shadow-lg hover:bg-black/60 transition"
           >
