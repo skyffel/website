@@ -43,7 +43,7 @@ export default async function Home() {
         </div>
         <div className="flex flex-col md:flex-row gap-4 items-center my-4">
           <Link
-            href="https://cal.com/philip-andersson/skyffel-demo"
+            href="https://link.skyffel.com/demo"
             target="_blank"
             className="bg-black/80 text-white px-4 py-2 rounded-xl leading-none shadow-lg hover:bg-black/60 transition"
           >
