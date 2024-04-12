@@ -42,6 +42,14 @@ export default async function Home() {
             }
           </p>
         </div>
+        <iframe
+          className="w-full md:w-3/4 aspect-video"
+          src="https://www.youtube.com/embed/U_2KU2gk-pY?si=FJc0PDmx_ggXQbsY"
+          title="skyffel - beta demo video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
         <div className="flex flex-col md:flex-row gap-4 items-center my-4">
           <Link
             href="https://link.skyffel.com/demo"
