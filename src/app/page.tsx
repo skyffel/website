@@ -43,14 +43,14 @@ export default async function Home() {
           </p>
         </div>
         <iframe
-          className="w-full md:w-3/4 aspect-video"
+          className="w-full max-w-xl md:w-3/4 aspect-video rounded-xl"
           src="https://www.youtube.com/embed/U_2KU2gk-pY?si=FJc0PDmx_ggXQbsY"
           title="skyffel - beta demo video"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerPolicy="strict-origin-when-cross-origin"
           allowFullScreen
         ></iframe>
-        <div className="flex flex-col md:flex-row gap-4 items-center my-4">
+        <div className="flex flex-col gap-4 items-center my-4">
           <Link
             href="https://link.skyffel.com/demo"
             target="_blank"
@@ -58,9 +58,12 @@ export default async function Home() {
           >
             Schedule demo
           </Link>
-          <a href="#waitlist-input" className="text-black/80">
-            Waitlist signup {"->"}
-          </a>
+          <label className="flex flex-col gap-2 items-center mt-4">
+            <span className="text-sm text-black/80">
+              Get on the beta waitlist
+            </span>
+            <WaitlistSignup />
+          </label>
         </div>
         <Pipes />
         <section className="flex flex-col md:flex-row gap-8">
@@ -137,12 +140,6 @@ export default async function Home() {
             </article>
           </div>
         </section>
-        <label className="flex flex-col gap-2 items-center mt-4">
-          <span className="text-sm text-black/80">
-            Get on the beta waitlist
-          </span>
-          <WaitlistSignup />
-        </label>
       </main>
       <footer className="mt-16 w-full border-t border-t-black/10 pt-8 flex justify-between items-end">
         <Logo className="h-8" />
