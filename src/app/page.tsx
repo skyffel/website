@@ -66,7 +66,7 @@ export default async function Home() {
             <WaitlistSignup />
           </label>
         </div>
-        <Pipes />
+
         <div className="mb-16">
           <span className="text-black/60 block mb-1">Use cases</span>
           <h2 className="text-3xl font-medium mb-8">
@@ -155,6 +155,7 @@ export default async function Home() {
             ))}
           </section>
         </div>
+        <Pipes />
         <div>
           <span className="text-black/60 block mb-1">Features</span>
           <h2 className="text-4xl font-medium mb-8">
